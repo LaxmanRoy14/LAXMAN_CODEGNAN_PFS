@@ -1,0 +1,6 @@
+print("DAY1 OF PYTHON")
+print("--------------------------------------------------------------------------------")
+print("My name is Laxman")
+print("I'm persueing my B.tech CSE final year in Andhra University College Of Engineering")
+print("Today is day 1 of learning python programming")
+print("--------------------------------------------------------------------------------")
