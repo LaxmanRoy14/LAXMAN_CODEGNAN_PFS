@@ -24,19 +24,22 @@ if len(atm_pin) == 4:
             else:
                 print(f"{deposit_m} you have entered is not round figure or less than 5000/-")
         elif user_choice == 3:
-            old_pin = input("Enter your old pin : ")
-            if old_pin == icic_roy_ac_details['ATM PIN']:
-                new_pin = input("Enter new PIN number : ")
-                if len(new_pin) == 4:
-                    if new_pin != icic_roy_ac_details['ATM PIN']:
-                        icic_roy_ac_details['ATM PIN'] = new_pin
-                        print(f"PIN changed successfully.\nNew PIN is {new_pin} ")
+            attempts_remaining = 3
+            while attempts_remaining > 0:
+                old_pin = input("Enter your old pin : ")
+                if old_pin == icic_roy_ac_details['ATM PIN']:
+                    new_pin = input("Enter new PIN number : ")
+                    if len(new_pin) == 4:
+                        if new_pin != icic_roy_ac_details['ATM PIN']:
+                            icic_roy_ac_details['ATM PIN'] = new_pin
+                            print(f"PIN changed successfully.\nNew PIN is {new_pin} ")
+                        else:
+                            print("New pin shouldn't be same as old pin")
                     else:
-                        print("New pin shouldn't be same as old pin")
+                        print("PIN entered is not 4 digits. Please enter 4 digit PIN")
                 else:
-                    print("PIN entered is not 4 digits. Please enter 4 digit PIN")
-            else:
-                print("You entered the wrong pin")
+                    attempts_remaining-=1
+                    print(f"You entered the wrong pin. You have {attempts_remaining} attempts remaining")
     else:
         print("You have entered an incorrect pin.")
 else:
