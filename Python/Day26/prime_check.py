@@ -4,6 +4,8 @@ def prime_num(num):
         if num % i == 0:
             count+=1
     if count == 2:
-        return True
+        print("True")
     else:
-        return False
+        print("False")
+num = int(input())
+prime_num(num)

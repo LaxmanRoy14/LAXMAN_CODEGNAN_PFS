@@ -1,4 +1,4 @@
-'''
+
 functions ()
 ------------
 --> this a block of code whicih is reusuable.
@@ -61,7 +61,7 @@ def palindrome(n, empty):
 palindrome(n, empty)
 
 4. Fibonacii :
-'''
+
 n = int(input("Enter the number: "))
 n1=0
 n2=1

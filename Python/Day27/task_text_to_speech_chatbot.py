@@ -19,6 +19,12 @@ elif "name is" in user_text:
 elif "i am" in user_text:
     name = user_text.split("i am")[-1].strip()
 
+elif "i'm" in user_text:
+    name = user_text.split("i'm")[-1].strip()
+
+elif "call me" in user_text:
+    name = user_text.split("call me")[-1].strip()
+
 # Chatbot logic
 if user_text in ["hi", "hello", "hey"]:
     response = "Hello! How can I help you?"

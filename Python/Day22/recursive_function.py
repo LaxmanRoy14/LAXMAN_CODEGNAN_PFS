@@ -55,24 +55,3 @@ def Vowel_con(any):
     print(f"Count of vowels is {count_v}\ncount of consonents is {count_c}\ncount of spaces is {count_s}")
 any = input("Enter a sentence : ")
 Vowel_con(any)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

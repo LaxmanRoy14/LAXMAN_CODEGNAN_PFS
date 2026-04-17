@@ -10,7 +10,7 @@ while attempts > 0:
         attempts -= 1
         print(f"\nWrong Guess! Try again. Attempts remaining {attempts}\n")
         if attempts > 0:
-            if user_num > num:
+            if num > user_num:
                 print("Hint : Guessed Number is more than Actual Number\n")
             else:
                 print("Hint : Guessed Number is less than Actual Number\n")
