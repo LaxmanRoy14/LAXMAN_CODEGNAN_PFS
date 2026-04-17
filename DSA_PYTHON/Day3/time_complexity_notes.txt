@@ -1,0 +1,63 @@
+# Time Complexity - Short Notes
+
+## Definition
+Time Complexity is the measure of how the execution time of an algorithm grows as the input size increases.
+
+It helps us analyze the efficiency of a program.
+
+---
+
+## Big O Notation
+Time complexity is represented using **Big O notation**.
+
+Examples:
+
+- **O(1)** → Constant time
+- **O(log n)** → Logarithmic time
+- **O(n)** → Linear time
+- **O(n log n)** → Linearithmic time
+- **O(n²)** → Quadratic time
+- **O(2ⁿ)** → Exponential time
+
+---
+
+## Common Examples
+
+### O(1) - Constant Time
+```python
+print(arr[0])
+O(n) - Linear Time
+for i in range(n):
+    print(i)
+O(n²) - Quadratic Time
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+-----------------------------------------------------------------------------------------------
+Rules to Calculate
+Single loop → O(n)
+Nested loops → O(n²)
+Loop reducing by half → O(log n)
+Multiple separate loops → Add complexities
+Best to Worst Order
+O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ)
+Why Important in DSA?
+Helps optimize code
+Useful in coding interviews
+Important for large input sizes
+Used to compare algorithms
+------------------------------------------------------------------------------------------------
+Example
+Find largest element in array:
+
+arr = [2,5,1,9]
+mx = arr[0]
+
+for i in arr:
+    if i > mx:
+        mx = i
+
+Time Complexity = O(n)
+-------------------------------------------------------------------------------------------------
+Conclusion
+Always try to write code with lower time complexity for better performance.
